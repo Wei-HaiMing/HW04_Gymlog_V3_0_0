@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.logButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 getInformationFromDisplay();
                 updateDisplay();
             }
@@ -54,7 +54,5 @@ public class MainActivity extends AppCompatActivity {
         }catch(NumberFormatException e){
             Log.d(TAG, "Error reading value from reps edit text.");
         }
-
-
     }
 }
