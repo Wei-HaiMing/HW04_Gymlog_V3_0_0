@@ -6,13 +6,13 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.gymlogcst338sp25.databinding.ActivityMainBinding;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    com.example.gymlogcst338sp25.databinding.ActivityMainBinding binding;
+    ActivityMainBinding binding;
 
-    private static final String TAG = "DAC_GYMLOG";
+    public static final String TAG = "DAC_GYMLOG";
     String mExercise = "";
     double mWeight = 0.0;
     int mReps = 0;
