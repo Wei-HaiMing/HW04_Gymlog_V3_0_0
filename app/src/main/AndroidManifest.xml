@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GymlogCst338Sp25"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
