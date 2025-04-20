@@ -74,30 +74,17 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = LoginActivity.loginIntentFactory(getApplicationContext());
             startActivity(intent);
         }
+
         updateSharedPreference();
 
-        //TODO: remove two lines velow
-//        binding.logDisplayTextView.setMovementMethod(new ScrollingMovementMethod());
-//        updateDisplay();
+
         binding.logButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 getInformationFromDisplay();
                 insertGymLogRecord();
-                //TODO: remove line below
-//                updateDisplay();
             }
         });
-
-    /* TODO: remove this block
-        binding.exerciseInputEditText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                updateDisplay();
-            }
-        });
-
-     */
     }
 
     private void loginUser(Bundle savedInstanceState) {
