@@ -27,6 +27,6 @@ public interface UserDAO {
     @Query("SELECT * FROM " + GymLogDatabase.USER_TABLE + " WHERE username == :username")
     LiveData<User> getUserByName(String username);
 
-    @Query("SELECT * FROM " + GymLogDatabase.USER_TABLE + " WHERE username == :userId")
+    @Query("SELECT * FROM " + GymLogDatabase.USER_TABLE + " WHERE id == :userId")
     LiveData<User> getUserByUserId(int userId);
 }
